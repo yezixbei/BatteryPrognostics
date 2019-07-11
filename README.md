@@ -1,6 +1,7 @@
 **Battery Prognostics via Deep Learning**
 
 **I. Abstract**
+
 The purpose of this tool is to use capacity to estimate the remaining useful life of a rechargeable battery. It was built for Professor Charniak at Brown University while I was completing a masters in computer science. The purpose was to extend the niche knowledge I gained working as a process engineer at a battery start up prior to grad school. 
 
 
