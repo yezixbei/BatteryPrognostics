@@ -1,18 +1,18 @@
 # Battery Prognostics via Deep Learning
 
-## Abstract
+## I. Abstract
 
 The purpose of this tool is to use capacity to estimate the remaining useful life of a rechargeable battery. It was built for Professor Charniak at Brown University while I was completing a masters in computer science. The purpose was to extend the niche knowledge I gained working as a process engineer at a battery start up prior to grad school. 
 
 
 
-## Introduction
+## II. Introduction
 
 The state of the art lithium cobalt batteries used in consumer electronics are made of a carbon anode, a lithium cobalt oxide cathode, plastic separators, and liquid electrolyte. We have to take into account these material properties and the interactions amongst them along their interfaces. Instead of creating a complex electrochemical model of the system in order to predict its behavior, which would be time consuming, expensive, and inaccurate, a neural net is an appropriate tool for this purpose. Using neural nets, we can treat the data source as a black box and predict its behavior using preexisting data, which should exist in droves due to the proliferation of data intensive work on battery cycling from companies such as Tesla and Apple.
 
 
 
-## Experimental Procedures
+## III. Experimental Procedures
 
 ### Data Source & Concerns related to Battery Degradation
 
@@ -28,13 +28,13 @@ My neural net consists of a single GRU layer with 128 neurons, followed by one f
 
 
 
-## Results & Conclusions
+## IV. Results & Conclusions
 
 In Fig. 2  you can see that the difference between the predicted cycle at which the battery fails and the actual cycle is about 8 over a life time of 600. You can experiment with the tool using the JSON files included for the two different cells(B0006 and B0007) or using any other capacity data. In lieu of capacity degradation, charge transfer resistance can also be used as a proxy. (CTR increases over time.) The code itself is not complicated enough to be broken into multiple modules; however, I may fix that in a future commit in order to follow good software engineering practices.  One possible extension of this into a fully-fledged tool is to add an alert feature that looks ahead, given real time charging curves of a single battery, which should be useful in an electric car or a consumer electronic device. 
 
 
 
-## References
+## V. References
 
 1. Y Zhang, R Xiong, H He, Z Liu (2017) “A LSTM-RNN method for the lithium ion battery remaining useful life prediction” Prognostics and System Health Management Conference (Harbin)
 2. B. Saha and K. Goebel (2007). "Battery Data Set", NASA Ames Prognostics Data Repository , NASA Ames Research Center, Moffett Field, CA
@@ -43,7 +43,7 @@ In Fig. 2  you can see that the difference between the predicted cycle at which 
 
 
 
-## License
+## VI. License
 
 This project is licensed under the MIT License
 
