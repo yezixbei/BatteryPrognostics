@@ -34,7 +34,7 @@ In Fig. 2  you can see that the difference between the predicted cycle at which 
 
 
 
-## VI. License
+## V. License
 
 This project is licensed under the MIT License
 
