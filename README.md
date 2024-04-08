@@ -2,13 +2,13 @@
 
 ## I. Abstract
 
-The purpose of this tool is to use capacity to estimate the remaining useful life of a rechargeable battery. 
+The purpose of this tool is to use battery capacity to estimate the remaining useful life of a rechargeable battery. This is a side project while I was a masters student at Brown University.
 
 
 
 ## II. Introduction
 
-The state of the art lithium cobalt batteries used in consumer electronics are made of a carbon anode, a lithium cobalt oxide cathode, plastic separators, and liquid electrolyte. We have to take into account these material properties and the interactions amongst them along their interfaces. Instead of creating a complex electrochemical model of the system in order to predict its behavior, which would be time consuming, expensive, and inaccurate, a neural net is an appropriate tool for this purpose. Using neural nets, we can treat the data source as a black box and predict its behavior using preexisting data, which should exist in droves due to the proliferation of data intensive work on battery cycling from companies such as Tesla and Apple.
+The state of the art lithium cobalt batteries used in consumer electronics are made of a carbon anode, a lithium cobalt oxide cathode, plastic separators, and liquid electrolyte. To predict their behavior, one must take into account their material properties and the complex interactions amongst them along their interfaces, so instead, one can use a neural net to treat the data source as a black box and predict its behavior using preexisting data.
 
 
 
